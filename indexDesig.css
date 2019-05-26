@@ -1,0 +1,103 @@
+.nav-tabs {
+    background: #01579b;
+    border-bottom: 1px solid #dee2e6;
+}
+
+a {
+    color: #212121  !important;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+ul#myTab {
+    position: fixed;
+    top: 0px;
+    width: 106%;
+}
+
+.padre {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    justify-content: center;
+    width: 46% !important;
+    margin-top: 7%;
+
+}
+
+.hijo_uno {
+    margin-top: 7%;
+    text-align: center;
+}
+
+.hijo_dos {
+    position: fixed;
+    margin-top: 20%;
+}
+
+.hijo_tres {
+    position: fixed;
+    margin-top: 30%;
+}
+form.form1 {
+    margin-top: 9%;
+}
+
+/*Solo cuando la pantalla sea menor a 401 pixeles*/
+@media screen and (max-width: 401px) {
+    .hijo_dos {
+        position: fixed;
+        margin-top: 50%;
+    }
+    .hijo_tres {
+        position: fixed;
+        margin-top: 80%;
+    }
+
+}
+
+/*Solo cuando la pantalla sea menor a 361 pixeles*/
+@media screen and (max-width: 361px) {
+    .hijo_dos {
+        position: fixed;
+        margin-top: 58%;
+    }
+
+}
+  
+
+#home > div > div > h3 {
+    
+    color: #969FAA;
+        justify-content: center;
+
+}
+
+@media screen and (max-width: 375px) {
+    div#profile {
+        margin-top: 33%;
+        width: 172%;
+        margin-left: -39%;
+    }
+
+    div#contact {
+        width: 172%;
+        margin-left: -39%;
+        margin-top: 34%;
+    }
+
+    .padre {
+        margin-top: 25%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+
+}
+
+
+
+
