@@ -1,0 +1,27 @@
+<script language="javascript">
+    function recibir() {
+        var valor = document.getElementById("texto").value;
+        var valor2 = document.getElementById("texto2").value;
+
+        url = url = "https://wbl8q9rpg6.execute-api.us-east-1.amazonaws.com/prod/"
+        inter = '?'
+        url2= url +'?nombre='+ valor+'&'+'tipo_doc='+ valor2;
+        window.open(url2, '_blank');
+
+    }        
+</script>
+
+
+<body>
+
+    <form id="formulario" method="Post">
+
+        <input type="text" id="texto" name="landa" />
+        <input type="text" id="texto2" name="landa" />
+
+        <input type="button" name="enviar" value="Enviar" onclick="recibir();" /><br>
+        <h1 id="txt"></h1>
+        <h3>txt</h3>
+    </form>
+
+</body>

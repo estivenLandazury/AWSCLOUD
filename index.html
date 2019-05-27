@@ -51,10 +51,12 @@
             <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
                 aria-selected="false">Agregar Paciente</a>
         </li>
+        <!--
         <li class="nav-item">
             <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
                 aria-selected="false">Editar o Bucsar paciente</a>
         </li>
+         -->
     </ul>
 
     <!--Pestaña #1-->
@@ -67,7 +69,7 @@
                     <h3> Tu piel nuestro compromiso</h3>
 
                 </div>
-
+<!-- 
                 <div class="hijo_dos">
                     <a href="#profile-tab"> <button type="button" class="btn btn-secondary btn-lg btn-block">Agregar
                             Nuevo Paciente</button> </a>
@@ -78,7 +80,7 @@
                         paciente</button>
                 </div>
 
-
+-->
 
             </div>
 
@@ -87,6 +89,25 @@
         <!-- Pestaño #2 -->
         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
             <div class="container">
+
+
+                <script language="javascript">
+                    function recibir() {
+                        url = "https://wbl8q9rpg6.execute-api.us-east-1.amazonaws.com/prod/"
+                        inter = '?'
+                        var valor = document.getElementById("exampleFormControlInput1").value;
+                        var valor2 = document.getElementById("exampleFormControlSelect1").value;
+                        var valor3 = document.getElementById("exampleFormControlInput2").value;
+                        var valor4 = document.getElementById("exampleFormContrutolInp3").value;
+
+
+
+                       url2= url + inter + 'nombre=' + valor+'&'+'tipo_doc='+valor2  +'&'+'numero_doc='+valor3+'&'+'ocupacion='+valor4;
+                      alert("Se ha agregado exitosamente el usuario")
+                       window.open(url2, '_blank');
+                    }        
+                </script>
+
                 <form>
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Nombre</label>
@@ -101,13 +122,13 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlInput2">Número Documento</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="nombre">
+                        <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="numero documento">
                     </div>
 
-                    
+
                     <div class="form-group">
                         <label for="exampleFormControlInput3">Ocupación</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="campesino">
+                        <input type="text" class="form-control" id="exampleFormContrutolInp3" placeholder="campesino">
                     </div>
 
                     <div class="form-group">
@@ -115,7 +136,7 @@
                         <input type="file" multiple="true" class="form-control" id="ejemplo_archivo_1">
                         <p class="help-block">Selecione una imagen.</p>
                     </div>
-<!--   
+                    <!--   
                     <div class="form-group">
                         <label for="example-date-input">Fecha Nacimiento</label>
                         <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
@@ -157,8 +178,11 @@
                 </form>
 
                 <div class="hijo_cuatro">
-                    <button type="button" class="btn btn-secondary ">Agregar Paciente</button>
+                    <button type="button" class="btn btn-secondary " onclick="recibir();">Agregar Paciente</button>
                 </div>
+
+                <div id="txt"> </div>
+
             </div>
 
 
@@ -166,7 +190,7 @@
 
 
         <!-- Pestaña 3-->
-
+<!-- 
         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
             <div class="container">
 
@@ -180,6 +204,9 @@
                     <input class="form-control my-0 py-1" type="text" placeholder="Buscar Paciente" aria-label="Search">
                 </div>
 
+
+
+  
                 <form class="form1">
 
                     <div class="form-group">
@@ -202,7 +229,8 @@
                         <label for="exampleFormControlInput32">Ocupación</label>
                         <input type="text" class="form-control" id="exampleFormControlInput32" placeholder="campesino">
                     </div>
-<!--  
+
+                   
                     <div class="form-group">
                         <label for="example-date-input2">Fecha Nacimiento</label>
                         <input class="form-control" type="date" value="2011-08-19" id="example-date-input2">
@@ -235,15 +263,16 @@
                         <textarea class="form-control" id="exampleFormControlTextarea42" rows="3"></textarea>
                     </div>
 
- -->
+ 
                 </form>
-                
+
 
                 <div class="hijo_cinco">
-                        <button type="button" class="btn btn-secondary ">Gurdar Cambios</button>
-                    </div>
+                    <button type="button" class="btn btn-secondary" >Gurdar Cambios</button>
+                </div>
             </div>
         </div>
+        -->
 
 
 
